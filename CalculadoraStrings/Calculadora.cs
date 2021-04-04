@@ -61,18 +61,6 @@ namespace CalculadoraStrings
 
         public int[] UltimasTresSumas()
         {
-            /**
-             * Otra forma de hacerlo más larga
-            List<int> ultimasTresSumas = new List<int>();
-
-            for (int i = sumas.Count - 1; i >= 0; i--)
-            {
-                ultimasTresSumas.Add(sumas.ElementAt(i));
-            }
-
-            return ultimasTresSumas.Take(3).ToArray();
-            */
-
             sumas.Reverse();
 
             return sumas.Take(3).ToArray();
